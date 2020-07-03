@@ -88,6 +88,8 @@
                     <td>Get some Coffee</td>
                     <td>You need coffee as you are a coder</td> 
                     <td><button class="btn btn-sm btn-primary">Delete</button></td> 
+                    <br>
+                    <td><button class="btn btn-sm btn-primary">EDIT</button></td> 
                   </tr>
                   
                 </tbody>
@@ -144,6 +146,7 @@
                     <td>${element[0]}</td>
                     <td>${element[1]}</td> 
                     <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td> 
+                    <td><button class="btn btn-sm btn-primary" onclick="edit(${index})">EDIT</button></td> 
                     </tr>`; 
                 });
                 tableBody.innerHTML = str;
@@ -159,6 +162,21 @@
                 itemJsonArray.splice(itemIndex, 1);
                 localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
                 update();
+
+            }
+            function edit(itemIndex)
+            {
+                console.log("EDIT",itemIndex);
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                tit = document.getElementById('title').value;
+                desc = document.getElementById('description').value;
+                
+                itemJsonArray.splice(itemIndex, 1);
+                itemJsonArray.push([tit, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+                update();
+
 
             }
             function clearStorage(){
