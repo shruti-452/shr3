@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Sidebar Menu</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script>
+    	
+var downArrow = document.getElementById("btn1");
+var upArrow = document.getElementById("btn2");
+
+downArrow.onclick = function () {
+    'use strict';
+    document.getElementById("first-list").style = "top:-620px";
+    document.getElementById("second-list").style = "top:-620px";
+    downArrow.style = "display:none";
+    upArrow.style = "display:block";
+};
+
+upArrow.onclick = function () {
+    'use strict';
+    document.getElementById("first-list").style = "top:0";
+    document.getElementById("second-list").style = "top:80px";
+    upArrow.style = "display:none";
+    downArrow.style = "display:block";
+};
+
+
+// creating my image link
+
+var link = document.createElement("a");
+document.body.appendChild(link);
+
+link.href = "https://codepen.io/mo7hamed/pens/public";
+link.target = "_blank";
+
+var photo = document.createElement("img");
+link.appendChild(photo);
+
+photo.src =
+  "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1292524/profile/profile-80.jpg";
+photo.alt = "mo7amed";
+
+photo.style =
+  "border-radius:50%;position:fixed;bottom:20px;right:20px;transition:all 0.5s ease";
+
+photo.onmouseover = function() {
+  this.style.transform = "scale(1.1,1.1)";
+  this.style.boxShadow = "5px 5px 15px #000";
+};
+
+photo.onmouseout = function() {
+  this.style.transform = "scale(1,1)";
+  this.style.boxShadow = "none";
+};
+    </script>
+    	<link rel="stylesheet" href="About.css">	
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="sidebar">
+      <div class="bg_shadow"></div>
+        <div class="sidebar__inner">
+           <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="profile_info">
+            <div class="profile_img">
+              <img src="img/img1.jpg" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">SHRUTI KHURANA</p>  
+                <p class="role">FULL STACK SOFTWARE ENGINEER</p>
+               
+            </div>
+        </div>
+        <ul  class="BC">
+    <li ><a 
+        href="/portfolio/">Portfolio</a></li>
+    <li ><a 
+        href="/skills-and-offer/">My offer</a></li>
+    <li ><a
+        href="/contact/">Contact me</a></li>
+  </ul>
+  <ul class="AB">
+    <!-- <li class=""><a href="/about-me/">About me</a></li> -->
+    <!-- <li class=""><a href="/blog">Tech blog</a></li> -->
+    <li class=""><a href="/cv/">My CV</a></li>
+    <li class=""><a href="/talks/">My tech
+        talks</a></li>
+    <li><a href="https://medium.com/@jtomaszewski" target="_blank">Personal blog</a></li>
+  </ul>
+  <div class="s1">
+      <a href="#" target="_blank"><img src="img/bc1.png"   height="40px" weight="4px"></a>
+      <a href="#" target="_blank"><img src="img/bc2.png"   height="40px" weight="4px"></a>
+      <a href="#" target="_blank"><img src="img/bc3.png"   height="40px" width="40px" ></a>
+      <a href="#" target="_blank"><img src="img/bc4.png"   height="40px" width="40px" ></a>
+      <a href="#" target="_blank"><img src="img/bc5.png"   height="40px" width="40px" ></a>
+      </div>
+
+  
+      </div>
+     
+    </div>
+    
+    
+      
+      <div class="contain">
+        
+        <div class="page">
+            <div class="timeline">
+              <div class="timeline__group">
+                <span class="timeline__year">2017</span>
+                <div class="timeline__box">
+                  <div class="timeline__date">
+                    <span class="timeline__day">2</span>
+                    <span class="timeline__month">Feb</span>
+                  </div>
+                  <div class="timeline__post">
+                    <div class="timeline__content">
+                      <p>Attends the Sophia Girls Sn. sec School. Studied till 12th class at school</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline__box">
+                  <div class="timeline__date">
+                    <span class="timeline__day">1</span>
+                    <span class="timeline__month">Sept</span>
+                  </div>
+                  <div class="timeline__post">
+                    <div class="timeline__content">
+                      <p>Started from Banasthali University This is an important stage of my career. Here I studied Bacher of technology. The experience greatly affected me</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__group">
+                <span class="timeline__year">2020</span>
+                <div class="timeline__box">
+                  <div class="timeline__date">
+                    <span class="timeline__day">14</span>
+                    <span class="timeline__month">Jul</span>
+                  </div>
+                  <div class="timeline__post">
+                    <div class="timeline__content">
+                      <p>Currently working as intern at beyond alphabets</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              </div>
+            </div>
+          </div>
+          
+          
+          
+     </div>
+</body>
+</html>
