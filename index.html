@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Responsive Sidebar Menu</title>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script>
-    	$(document).ready(function(){
-        $(".hamburger .fas").click(function(){
-    $(".wrapper").addClass("active")
-})
-
-$(".wrapper .sidebar .close").click(function(){
-    $(".wrapper").removeClass("active")
-})
-    </script>
-    	<link rel="stylesheet" href="style.css">	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>My Website</title>
 </head>
 <body>
-
-
+    <section id="AB">
+ 
 <div class="wrapper">
     <div class="sidebar">
       <div class="bg_shadow"></div>
@@ -40,16 +29,16 @@ $(".wrapper .sidebar .close").click(function(){
         </div>
         <ul  class="BC">
     <li ><a 
-        href="https://shruti-452.github.io/shr3/About.html">Portfolio</a></li>
+        href="#services">Portfolio</a></li>
     <li ><a 
-        href="https://shruti-452.github.io/shr3/offer.html">My offer</a></li>
+        href="#projects">My Projects</a></li>
     <li ><a
-        href="/contact/">Contact me</a></li>
+        href="#contact">Contact me</a></li>
   </ul>
   <ul class="AB">
     <!-- <li class=""><a href="/about-me/">About me</a></li> -->
     <!-- <li class=""><a href="/blog">Tech blog</a></li> -->
-    <li class=""><a href="/cv/">My CV</a></li>
+    <li class=""><a href="#about">My CV</a></li>
     <li class=""><a href="/talks/">My tech
         talks</a></li>
     <li><a href="https://medium.com/@jtomaszewski" target="_blank">Personal blog</a></li>
@@ -69,21 +58,176 @@ $(".wrapper .sidebar .close").click(function(){
     
     
       
-      <div class="container">
+      <div class="contain">
         <div class="item">
           Hi, I'm Shruti,
         </div>
         <div class="item1"><h2 class="EF">
+            
             a freelance software engineer specialized in<br />
             both <strong><b>front-end and back-end</b></strong>.
           </h2>
         </div>
           <div >
-          <button class="btn ">MY PORTFOLIO</button><br>
-          <button class="btn ">MY OFFER</button>
+          <button class="btn2 ">MY PORTFOLIO</button><br>
+          <button class="btn2 ">MY OFFER</button>
         </div>
        
 </div>
-	
+</section>
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Port<span>f</span>olio</h1>
+        <p></p>
+      </div>
+      <div class="service-bottom">
+        
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>School Education</h2>
+          <p>Studied at sophia Girls sen. sec. school</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>College education</h2>
+          <p>Studied bachelor of technology at Banasthali University in computer science</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Internship</h2>
+          <p>Intern at Beyond Alphabets Noida </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Coding is Love</h2>I buikt an e commerce site for the sale of clothing items</p>
+          </div>
+          <div class="project-img">
+            <img src="/img/bc9.png" width=600px alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Coding is Love</h2></p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>Coding is Love</h2>!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Coding is Love</h2></p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="img/img1.jpg" alt="img" height=400px width=300px>
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">MY<span> CV</span></h1>
+        <h2>Full Stack Engineer</h2>
+        <p>MY  Name is Shruti.I am from Saharanpur Uttar Pradesh.I am in fourth year of Bachelor of Technology.I am doing Computer Scienec</p>
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+8192058301</h2>
+            <h2>+9549569725</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>khuranashri58@gmail.com</h2>
+            <h2>abcd@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Rajendra Nagar,Saharanpur</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>S</span>hruti <span>K</span>hurana</h1></div>
+      <h2></h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Shruti. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="app.js"></script>
 </body>
 </html>
