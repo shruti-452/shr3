@@ -1,0 +1,48 @@
+body{
+    font-family: 'Coiny', cursive;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Coiny', cursive;
+    
+}
+.carousel-caption
+{
+    margin-bottom: 200px;
+    font-family: 'Coiny', cursive;
+    
+}
+#Pricing{
+    background-color: khaki;
+
+}
+#about{
+    background-color:burlywood;
+}
+.card{
+    margin-left:20px;
+}
+
+.carousel-caption h2{
+    text-transform: uppercase;
+    font-size: 5vh;
+    color:black;
+}
+.carousel-caption p{
+    text-transform: uppercase;
+    font-size: 2vh;
+    color:black;
+}
+
+.carousel-control.right{
+    background-image: none;
+}
+.carousel-control.left{
+    background-image: none;
+}
+#AB{
+width: 100%;
+height:90vh;
+}
